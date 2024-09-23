@@ -1,0 +1,294 @@
+@inport url(<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>)
+*{
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box ;
+scroll-behavior: sommth ;
+ }
+ header{
+    background-color: rgb(17, 17, 16);
+    width:80%;
+   /* بتثبت header في الصفحه */
+    position: fixed;
+    /* الطبقات عشان مفيش حاجع تغطي عليه وي انا بمشي في الصفحه  */
+    z-index: 1000;
+    display: flex;
+    /* space-between =بيعمل فارق بين nav and a في header */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20% 10px  100px;
+    
+   
+ }
+ .logo{
+    /* بيشيل الخط الي تحت الرابط */
+    text-decoration: none;
+    color: azure;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+   
+ }
+ .nveigation a{
+   text-decoration: none;
+   color: rgb(203, 206, 206);
+   font-weight: 500;
+   font-size: 1.1em;
+   /* التباعد بين العناصر */
+   padding-left: 20px;
+ }
+ .nveigation  a:hover{
+    color: rgb(248, 248, 248);
+ }
+ section{
+    padding: 100px 200px;
+    
+ }
+ .main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(imges/Untitled-1.jpg) ;
+    background-size: cover;
+   background-attachment: fixed;
+   
+    
+ }
+ .main h2 {
+   color: rgb(12, 11, 11);
+   font-size: 1.2em;
+   font-weight: 600;
+ } 
+ .main h2 span{
+   display: inline-block;
+   margin-top: 10px;
+   color: rgb(7, 8, 8);
+   font-size: 3em;
+   font-weight: 500;
+ }
+ .main h3{
+   color: rgb(6, 10, 14);
+   font-size: 2em;
+   font-weight: 700;
+   letter-spacing: 3px;
+   margin-top: 10px;
+   margin-bottom: 30px;
+ }
+ .main-btn{
+   color: rgb(215, 218, 221);
+   background-color: rgb(8, 8, 8);
+   text-decoration: none;
+   font-size: 1.1em;
+   font-weight: 600;
+   display: inline-block;
+   padding: 0.9375em;
+   letter-spacing: 1px; 
+   border-radius: 10PX;
+   margin-bottom: 40PX;
+   transition: 0.7s ease;
+ }
+  .main-btn:hover{
+   background-color: rgb(105, 105, 105);
+   transform: scale(1.1);
+
+ }
+   .social-icons-1 a {
+   color: rgb(0, 0, 0);
+   font-size: 1.7em;
+   padding-right  : 20px;
+
+ }
+ .cards{
+  width: 100%;
+  background-color: #666464;
+  background-size: cover;
+  background-attachment: fixed;
+  
+  
+
+
+ }
+ .title{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+ }
+ .content{
+  display: flex;
+  justify-content: center;
+  /* flex-direction بتحدد طريقة عرض الصنديق جمب بعض وله تحت بعض */
+  flex-direction: row;
+  /* عشان متفضلش تصغر  */
+  flex-wrap: wrap;
+  
+ }
+ .card{
+  background-color: #fff;
+  display: inline-block;
+  width:25em;
+  box-shadow: 3px 15px rgb(105, 105, 105);
+  border-radius: 5PX;
+  padding: 25PX;
+  margin: 7PX;
+  transition: 0.7s ease;
+ }
+ .card:hover{
+  transform: scale(1.1);
+ }
+ .icon{
+  color: #000;
+  font-size: 1.5em;
+  text-align: center;}
+  .info{
+    text-align: center;
+  }
+  .info h2{
+    color: #000;
+    font-size: 0.8em;
+    font-weight: 700;
+    margin: 10px;
+    }
+
+ .icon-1 {
+    width: 50px;
+    width: 50px;
+  }
+  .Projects{
+    width: 100%;
+    background-color: rgb(211, 206, 199);
+  }
+  .Projects.content{
+    margin-top: 30px;
+  }
+  .project-card {
+    background-color: rgb(180, 180, 178) ;
+    border: 2px solid black;
+    min-height: 16em;
+    width: 24em;
+    overflow: hidden;
+    border-radius:10px ;
+    margin: 20px;
+    transition: 0.7s ease;
+    display: inline-block;
+  }
+  .project-card:hover {
+   transform: scale(1.1) ;
+
+  }
+  .project-card :hover  .Project-image{
+    opacity: 0.9;
+  }
+.Project-image img{
+  width: 100%;
+}
+.Project-info{
+  padding: 1em;
+}
+.Project-categore{
+  font-size: 0.8 em;
+  color: #000;
+}
+.Project-title{
+  display: flex;
+  justify-content:space-between ;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10PX;
+}
+.more-details{
+  text-decoration: none;
+  color: blue ;
+}
+.more-details :hover {
+  color :#fff;
+
+}
+.footer{
+  align-items: center;
+  background-color: #050303;
+  flex-wrap: nowrap;
+  padding: 1em;
+  color: #fff;
+  display: flex;
+  justify-content:space-around ;
+  width: 100%;
+  margin: 0;
+  
+  }
+  .social-icons a {
+    color: rgb(248, 248, 248);
+    font-size: 1.7em;
+    padding-right  : 20px;
+ 
+  }
+  .footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+  }
+.footer-title span{
+  color: #7c7c7c;
+}
+.footer .social-icons{
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+}
+
+@media (max_width:1023px){
+
+  header { : 12px 20px;
+}
+.main a {
+  padding-left:10px ;
+
+}
+.title{
+  font-size: 1.1em;
+}
+.section{
+  padding: 80px 20px;
+
+}
+
+.main-content h2{font-size: 1em;
+
+
+}
+.main-content h3 {
+  font-size: 1.6em;
+}
+.content{
+  flex-direction: column;
+  align-items: center;
+}
+
+}
+
+@media (max_width:641px){
+  body{
+    font-size: 12px;
+
+  }
+  .main-content h2 {
+   font-size: 0.8em; 
+  }
+  .main-content h3 {
+    font-size: 1.4em; 
+   }
+ 
+}
+@media (max_width:300px){
+body{
+  font-size: 10px;
+}
+
+
+
+}
+
